@@ -1,6 +1,6 @@
 class UserPage{
     get logoutBtn (){
-        return cy.get('a[href="logout.htm"]')
+        return cy.get('a[href="logout.htm"]', { timeout: 10000 })
     } ;
 
 }
