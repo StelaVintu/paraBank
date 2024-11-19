@@ -47,6 +47,9 @@ class RegistrationPage{
     get userNameError(){
         return cy.get('[id="customer.username.errors"]')
     }
+    get registerBtn (){
+        return cy.get('a[href="register.htm"]')
+    }
 
     fillRegistrationForm(userData) {
         if (userData.firstName) this.firstNameInput.type(userData.firstName);
