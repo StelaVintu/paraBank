@@ -43,7 +43,7 @@ describe('Registration', () => {
         RegistrationPage.successMessagePanel.should('contain.text', 'Your account was created successfully. You are now logged in.');
     });
 
-    it.only('Should not register account with existing username', () => { 
+    it('Should not register account with existing username', () => { 
         // Recreate a user with the same username for conflict
         RegistrationPage.fillRegistrationForm(userData);
         RegistrationPage.submitForm();
